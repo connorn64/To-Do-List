@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Shadows+Into+Light+Two&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap');
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: auto;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(167,66,184,1) 0%, rgba(70,245,252,1) 100%);
+}
+
+.canvas {
+  width: auto;
+  padding: 1em;
+  border: 2.5px solid #000000;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 10px #000000;
+}
+
+h1 {
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 3px #000000;
+  font-size: 4em;
+  font-family: 'Alfa Slab One', cursive;
+  letter-spacing: 5px;
+}
+
+h2 {
+  color: #ffffff;
+  text-shadow: 3px 3px 3px #000000;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5em;
+}
+
+p {
+  color: #000000;
+  margin: 15px 0;
+  padding: 0;
+}
+
+i {
+  color: #ffffff;
+}
+
+.liststyle {
+  color: #a6a6a6;
+  margin: 0;
+  padding: 0;
+  text-decoration: line-through;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #46f5fc;
+}
+
+.userbar {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid #000000;
+  padding: 0;
+  margin: 0;
+}
+
+#userinput {
+  flex-grow: 2;
+  margin: 0;
+  padding: 5px 5px;
+  color: #000000;
+  font-size: 20px;
+  font-family: 'Prompt', sans-serif;
+  border: 0;
+  outline: none;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+#enter {
+  cursor: pointer;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-left: 2px solid #000000;
+  background-color: #46f5fc;
+  font-size: 2em;
+  font-weight: bold;
+  transition: 0.4s ease;
+  outline: none;
+}
+
+#enter:hover {
+  background-color: #24da79;
+  opacity: 80%;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  color: #000000;
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+  margin: 2px 0;
+  padding: 0 0 0 5px;
+  border: 2px solid #000000;
+  background-color: #ffffff;
+  transition: ease 0.5s;
+  outline: none;
+}
+
+.done {
+  order: 3;
+  text-decoration: line-through;
+  background-color: #B1F9B9;
+}
+
+.eraseBtn {
+  float: right;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-left: 2px solid #000000;
+  background-color: red;
+  font-size: 1em;
+  font-weight: bold;
+  transition: 0.4s ease;
+  outline: none;
+}
+
+.eraseBtn:hover {
+  background-color: #bf0000;
+}
+
+@media screen and (max-width: 805px) {
+  #userinput {
+    width: 16em;
+  }
+  h1 {
+    font-size: 2.5em;
+  }
+  ul {
+    font-size: 20px;
+  }
+  button {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 537px) {
+  #userinput {
+    width: 13em;
+  }
+   h1 {
+    font-size: 2em;
+  }
+   ul {
+    font-size: 18px;
+  }
+  button {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  #userinput {
+    width: 9.7em;
+    padding: 3px 6px;
+    font-size: 17px;
+  }
+   h1 {
+    font-size: 1.8em;
+  }
+   ul {
+    font-size: 17px;
+  }
+   button {
+    font-size: 17px;
+    padding: 0 4px;
+  }
+  .canvas {
+    width: 14em;
+  }
+  .eraseBtn {
+    height: 26px;
+  }
+}

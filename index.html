@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        <a href="#">
+          <i class='fas fa-clipboard-list'></i> ToDo <span class="liststyle">List</span>
+        </a>
+      </h1>
+      <h2>How to use?</h2>
+      <p>1. Click on <span class="bold">"Add a task"</span>, and type what you need and press the <span class="bold">"Plus Icon"</span>.</p>
+      <p>2. To remove an item, click on the <span class="bold">"Erase"</span> button.</p>
+      <p>3. If you have finished a task, simply click on the task to mark it <span class="bold">"Done"</span>.</p>
+      <div class="canvas">
+        <div class="userbar">
+          <input type="text" id="userinput" placeholder="Add a task &#10024" maxlength="58">
+          <button id="enter">&#x2B;</button>
+        </div>
+          
+        <ul class="todos">
+        </ul>
+      </div>
+
+      <!-- Src to FontAwsome -->
+      <script src='https://kit.fontawesome.com/a076d05399.js'>
+      </script>
+      <!-- Src to script.js -->
+      <script src="script.js"></script>
+</body>
+</html>
